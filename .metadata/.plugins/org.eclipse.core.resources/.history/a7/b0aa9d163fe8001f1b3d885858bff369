@@ -1,0 +1,9 @@
+package javaday10abstraction;
+
+public class Circle implements Shape2D
+{
+	public void area()
+	{
+		System.out.println("3.14*r*r");
+	}
+}

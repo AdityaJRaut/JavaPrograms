@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Raut";		
+		Map<String,Integer> countWords=new HashMap<String,Integer>();
+		for(int i=0;name!="\0";i++)
+		{
+		countWords.putAll(countWords);
+		}
+
+		for(Entry<String, Integer> entry:countWords.entrySet())
+		{
+			System.out.println(entry.getKey()+": "+entry.getValue());
+		}
+	}
+}

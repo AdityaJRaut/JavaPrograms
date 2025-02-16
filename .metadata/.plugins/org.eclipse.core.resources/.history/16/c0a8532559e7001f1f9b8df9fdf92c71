@@ -1,0 +1,10 @@
+
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Raut";
+		String[] seprate=new String[name.length()];
+		int count = name.split(" ").length;
+		System.out.println(count);
+	}
+}

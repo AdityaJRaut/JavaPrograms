@@ -1,0 +1,6 @@
+package javaday10abstraction;
+
+public interface Shape2D {
+
+	
+}

@@ -1,0 +1,16 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Raut";
+		Map<String, Integer> charCountMap = new HashMap<String, Integer>();
+			charCountMap.put(name, charCountMap.getOrDefault(name, 0) + 1);
+		
+			for (Entry<String, Integer> entry : charCountMap.entrySet()) {
+			System.out.print(entry.getKey() + ":" + entry.getValue() + " ");
+		}
+	}
+}

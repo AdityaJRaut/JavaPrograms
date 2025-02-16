@@ -1,0 +1,7 @@
+package SchoolDemo;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+}

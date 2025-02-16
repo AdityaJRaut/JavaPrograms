@@ -1,0 +1,26 @@
+package JavaDay1;
+
+public class Student {
+
+	private String prn;
+	private String studentName;
+	private String motherName;
+	private String email;
+
+	public void Register() {
+		
+		System.out.println("I have Registered");
+	}
+
+	public void Login() {
+
+		System.out.println("I have logged in");
+	}
+
+	public void PayFees() {
+		
+		System.out.println("I have paid fees");
+
+	}
+
+}

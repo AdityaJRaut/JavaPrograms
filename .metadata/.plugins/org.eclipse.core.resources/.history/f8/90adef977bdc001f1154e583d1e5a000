@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+public class arrayReverse {
+	public static void main(String[] a) {
+		int arr[] = { 10, 20, 30, 20, 10 };
+		int brr[] = new int[arr.length];
+		System.out.println(arr.length);
+		int flag = 0;
+		for (int i = arr.length - 1, k = 0; i >= 0; i--, k++) {
+			brr[k] = arr[i];
+
+		}
+		for (int i = arr.length - 1, k = 0; i >= 0; i--, k++) {
+			if (arr[k] != arr[i]) {
+				flag = 1;
+				break;
+			}
+		}
+		if (flag == 0) {
+			System.out.println("Array is Palindrome");
+		} else {
+			System.out.println("Array is not Palindrome");
+		}
+		System.out.println(Arrays.toString(brr));
+
+	}
+}

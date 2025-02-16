@@ -1,0 +1,28 @@
+package dsa;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		System.out.print(0 + "," + 1 + ",");
+		Fibonacci(0, 1);
+
+	}
+
+	private static void Fibonacci(int n1, int n2) {
+		int count=2;
+		if(count>=12)
+		{
+			int n3 = n1 + n2;
+			System.out.print(n3 + ",");
+			n1 = n2;
+			n2 = n3;
+			Fibonacci(n1, n2);
+			count++;
+		}
+		else
+		{
+			return;
+		}
+	}
+
+}

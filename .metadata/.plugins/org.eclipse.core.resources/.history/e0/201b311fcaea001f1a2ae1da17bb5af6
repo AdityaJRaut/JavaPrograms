@@ -1,0 +1,18 @@
+package StudentManagementSystem;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		Course java=new Course("Java", 3);
+		Course testing=new Course("Testing", 2);
+		
+		Person one=new Student("Aditya", 30, "Java", "A");
+		one.displayInfo();
+		
+		Person two =new Teacher("Alice", 40, "Java");
+		two.displayInfo();
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package exceptionhandling;
+
+import java.util.Scanner;
+
+public class exception {
+
+	public static void main(String[] args) {
+		System.out.println("Enter numrator");
+		int n=new Scanner(System.in).nextInt();
+		System.out.println("enter denominator");
+		int d=new Scanner(System.in).nextInt();
+		int result = 0;
+		try 
+		{
+		result=n/d;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Cannot divide by 0");
+		}
+		System.out.println(result);
+
+	}
+
+}

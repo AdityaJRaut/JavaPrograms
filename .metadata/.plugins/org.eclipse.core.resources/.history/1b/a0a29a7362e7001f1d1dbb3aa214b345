@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Lenze DSC";
+		Map<String,Integer> charCount=new HashMap<String, Integer>();
+		for(String ch:name.split(" "))
+		{
+			charCount.put(ch, charCount.getOrDefault(ch, 0)+1);
+		}
+		for(Map.Entry<Character, Integer> entry:charCount.entrySet())
+		{
+			System.out.print(entry.getKey()+":"+entry.getValue()+" ");
+		}
+	}
+}

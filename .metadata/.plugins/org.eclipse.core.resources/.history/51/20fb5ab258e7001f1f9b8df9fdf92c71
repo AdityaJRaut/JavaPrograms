@@ -1,0 +1,21 @@
+
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Raut";
+		char letter = 'a';
+		int count = 0;
+		for (int k = 0; k < name.length(); k++) {
+			letter = name.charAt(k);
+			count = 0;
+			for (int i = 0; i < name.length(); i++) {
+				if (name.charAt(i) == letter && name.charAt(i) != '\t') {
+
+					count++;
+				}
+			}
+
+			System.out.print(name.charAt(k) + "-" + count + " ");
+		}
+	}
+}

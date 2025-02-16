@@ -1,0 +1,17 @@
+package javaday10abstraction;
+
+public class AbstractMainApp {
+
+	public static void main(String[] args) 
+	{
+		Shape2D s1;
+		s1=new FootballField();
+		s1.area();
+		s1.perimeter();
+		
+		FootballField f1=new FootballField();
+		f1.area();
+		f1.perimeter();
+		
+	}
+}

@@ -1,0 +1,22 @@
+package JavaDay1;
+
+public class Student {
+
+	private String prn;
+	private String studentName;
+	private String motherName;
+	private String email;
+
+	public void Register() {
+
+	}
+
+	public void Login() {
+
+	}
+
+	public void PayFees() {
+
+	}
+
+}

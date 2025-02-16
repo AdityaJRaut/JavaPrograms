@@ -1,0 +1,142 @@
+// 1. Abstract Class
+abstract class Person {
+    protected String name;
+    protected int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Abstract Methods
+    public abstract String getDetails();
+    public abstract void displayInfo();
+}
+
+// 2. Course Class
+class Course {
+    private String courseName;
+    private int credits;
+
+    public Course(String courseName, int credits) {
+        this.courseName = courseName;
+        this.credits = credits;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public int getCredits() {
+        return credits;
+    }
+
+    @Override
+    public String toString() {
+        return courseName + " (" + credits + " credits)";
+    }
+}
+
+// 3. Interface
+interface AssignGrades {
+    void assignGrade(Student student, String grade);
+}
+
+// 4. Teacher Class (Inheritance, Polymorphism, Interface Implementation)
+class Teacher extends Person implements AssignGrades {
+    private String subject;
+
+    public Teacher(String name, int age, String subject) {
+        super(name, age);
+        this.subject = subject;
+    }
+
+    @Override
+    public String getDetails() {
+        return "Teacher: " + name + ", Age: " + age + ", Subject: " + subject;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println(getDetails());
+    }
+
+    @Override
+    public void assignGrade(Student student, String grade) {
+        student.setGrade(grade);
+        System.out.println("Assigned grade " + grade + " to " + student.getName());
+    }
+}
+
+// 5. Student Class (Inheritance, Polymorphism, Method Overloading, Method Overriding)
+class Student extends Person {
+    private Course enrolledCourse;
+    private String grade;
+
+    public Student(String name, int age) {
+        super(name, age);
+    }
+
+    public void enrollInCourse(Course course) {
+        this.enrolledCourse = course;
+        System.out.println(name + " enrolled in " + course);
+    }
+
+    // Overloaded Method
+    public void enrollInCourse(String courseName, int credits) {
+        this.enrolledCourse = new Course(courseName, credits);
+        System.out.println(name + " enrolled in " + enrolledCourse);
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getDetails() {
+        String courseDetails = (enrolledCourse != null) ? enrolledCourse.toString() : "No course enrolled";
+        return "Student: " + name + ", Age: " + age + ", Course: " + courseDetails + ", Grade: " + (grade != null ? grade : "Not assigned");
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println(getDetails());
+    }
+}
+
+// 6. Main Class to Test Functionality
+public class SchoolManagementSystem {
+    public static void main(String[] args) {
+        // Create Teacher
+        Teacher teacher = new Teacher("Mr. Smith", 40, "Mathematics");
+
+        // Create Students
+        Student student1 = new Student("Alice", 20);
+        Student student2 = new Student("Bob", 22);
+
+        // Create Courses
+        Course math = new Course("Mathematics", 3);
+        Course science = new Course("Science", 4);
+
+        // Enroll Students in Courses
+        student1.enrollInCourse(math);
+        student2.enrollInCourse("Science", 4); // Using overloaded method
+
+        // Display Information
+        teacher.displayInfo();
+        student1.displayInfo();
+        student2.displayInfo();
+
+        // Assign Grades
+        teacher.assignGrade(student1, "A");
+        teacher.assignGrade(student2, "B");
+
+        // Display Updated Information
+        student1.displayInfo();
+        student2.displayInfo();
+    }
+}

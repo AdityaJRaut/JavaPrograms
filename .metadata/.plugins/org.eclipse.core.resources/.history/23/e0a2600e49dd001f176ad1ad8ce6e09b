@@ -1,0 +1,60 @@
+package JavaDay1;
+
+public class Student {
+
+	private int prn;
+	private String studentName;
+	private String motherName;
+	private String email;
+	
+	
+
+	public int getPrn() {
+		return prn;
+	}
+
+	public void setPrn(int prn) {
+		this.prn = prn;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public String getMotherName() {
+		return motherName;
+	}
+
+	public void setMotherName(String motherName) {
+		this.motherName = motherName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void Register() {
+		
+		System.out.println("I have Registered");
+	}
+
+	public void Login() {
+
+		System.out.println("I have logged in");
+	}
+
+	public void PayFees() {
+		
+		System.out.println("I have paid fees");
+
+	}
+
+}

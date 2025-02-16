@@ -1,0 +1,6 @@
+package javaday10abstraction;
+
+public class Rectangle extends Circle {
+
+	
+}

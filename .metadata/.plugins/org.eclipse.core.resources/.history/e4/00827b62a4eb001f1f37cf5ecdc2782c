@@ -1,0 +1,13 @@
+package SchoolDemo;
+
+public class Course {
+
+	String courseName;
+	int credits;
+	public Course(String courseName, int credits) {
+		super();
+		this.courseName = "Not Assigned";
+		this.credits = credits;
+	}
+	
+}

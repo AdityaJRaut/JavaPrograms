@@ -1,0 +1,6 @@
+package StudentManagementSystem;
+
+interface assignGrades {
+
+	void assignGrade(Student student, String grade);
+}

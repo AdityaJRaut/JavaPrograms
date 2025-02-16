@@ -1,0 +1,28 @@
+package SchoolDemo;
+
+public class Teacher extends Person implements AssignGrades {
+
+	private String subject;
+	public Teacher(String name, int age,String subject) {
+		super(name, age);
+		this.subject=subject;
+	}
+
+	@Override
+	public void assignGrade(Student student, String grade) {
+		student.setGrade(grade);
+	}
+
+	@Override
+	void getDetails() {
+		System.out.println("Enter Name of Teacher ");
+		
+		
+	}
+
+	@Override
+	void displayInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,58 @@
+package StudentManagementSystem;
+
+public class Student extends Person {
+	
+	private String enrolledCourse;
+	private String grade;
+	public Student(String name, int age, String enrolledCourse, String grade) {
+		super(name, age);
+		this.enrolledCourse = enrolledCourse;
+		this.grade = grade;
+	}
+	public String getEnrolledCourse() {
+		return enrolledCourse;
+	}
+	public void setEnrolledCourse(String enrolledCourse) {
+		this.enrolledCourse = enrolledCourse;
+	}
+	public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("Name "+this.getName());
+		System.out.println("Age "+this.getAge());
+		System.out.println("Enrolled Course "+this.getEnrolledCourse());
+	}
+	
+	
+	
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		System.out.println("Enter Name");
+		this.setName(sc.next());
+		System.out.println("Enter Age");
+		this.setAge(sc.nextInt());
+		System.out.println("Enter Course Enrolled");
+		this.setEnrolledCourse(sc.next());
+		System.out.println("Enter grade");
+		this.setGrade(sc.next());
+	}
+	public void enrollInCourse(Course c)
+	{
+		System.out.println("Course Enrolled "+c.getCourseName());
+	}
+	
+	public void enrollInCourse(String CourseName,int courseCredit)
+	{
+		System.out.println("Course Name "+CourseName);
+		System.out.println("Course Credit "+courseCredit);
+	}
+	
+
+}

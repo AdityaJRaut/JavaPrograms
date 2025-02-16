@@ -1,0 +1,20 @@
+package javaday10abstraction;
+
+public class FootballField implements Shape2D
+{
+
+	@Override
+	public void area() 
+	{
+		System.out.println(" Football Field 3.14*R*R");
+		
+	}
+
+	@Override
+	public void perimeter() 
+	{
+		System.out.println("L*B");
+		
+	}
+
+}

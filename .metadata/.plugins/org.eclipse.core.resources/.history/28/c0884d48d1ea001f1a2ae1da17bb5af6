@@ -1,0 +1,39 @@
+package StudentManagementSystem;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		
+		Person teacher;
+		teacher.getDetails();
+		teacher.displayInfo();
+
+        // Create Students
+        Student student1 = new Student("Alice", 20);
+        Student student2 = new Student("Bob", 22);
+
+        // Create Courses
+        Course math = new Course("Mathematics", 3);
+
+        // Enroll Students in Courses
+        student1.enrollInCourse(math);
+        student2.enrollInCourse("Science", 4); // Using overloaded method
+
+        // Display Information
+        teacher.displayInfo();
+        student1.displayInfo();
+        student2.displayInfo();
+
+        // Assign Grades
+        teacher.assignGrade(student1, "A");
+        teacher.assignGrade(student2, "B");
+
+        // Display Updated Information
+        student1.displayInfo();
+        student2.displayInfo();
+		
+
+	}
+
+}

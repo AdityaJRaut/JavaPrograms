@@ -1,0 +1,9 @@
+package javaday10abstraction;
+
+public class AbstractMainApp {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

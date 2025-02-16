@@ -1,0 +1,46 @@
+package StudentManagementSystem;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	public Student(String name, int age) {
+		super(name, age);
+	}
+	
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("Name "+this.getName());
+		System.out.println("Age "+this.getAge());
+		System.out.println("Enrolled Course "+this.enrolledCourse.toString());
+	}
+	
+	
+	
+	@Override
+	public void getDetails() {
+		return "Student: " + name + ", Age: " + age + ", Course: " + enrolledCourse.toString() + ", Grade: " + (grade != null ? grade : "Not assigned");
+	}
+	public void enrollInCourse(Course course)
+	{
+		 this.enrolledCourse = course;
+	        System.out.println(name + " enrolled in " + course);
+	}
+	
+	public void enrollInCourse(String CourseName,int courseCredit)
+	{
+		 this.enrolledCourse = new Course(CourseName, courseCredit);
+	        System.out.println(name + " enrolled in " + enrolledCourse);
+	}
+
+	public void setGrade(String grade) {
+        this.grade=grade;
+    }
+
+    public String getName() {
+        return name;
+    }
+	
+
+}

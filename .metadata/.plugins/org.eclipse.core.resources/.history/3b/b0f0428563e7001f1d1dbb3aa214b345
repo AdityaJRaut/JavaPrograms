@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Janardan Raut";
+		Map<String,Integer> sepstring=new HashMap<String, Integer>();
+		for(String ch:name.split(" "))
+		{
+			sepstring.put(ch, ch.length());
+		}
+		for(Map.Entry<String, Integer> entry:sepstring.entrySet())
+		{
+			System.out.print(entry.getKey()+":"+entry.getValue()+" ");
+		}
+	}
+}

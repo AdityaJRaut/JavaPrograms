@@ -1,0 +1,7 @@
+package javaday10abstractionrealtime;
+
+public interface Turf {
+
+	public void getTurfType();
+	public void getHourlyRate();
+}

@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+public class countWords {
+
+	public static void main(String[] args) {
+		String name = "Aditya Janardan Raut Kolhapur ShivajiPeth";
+		Map<String,Integer> sepstring=new HashMap<String, Integer>();
+		for(String ch:name.split(" "))
+		{
+			sepstring.put(ch, ch.length());
+		}
+		int max=0;
+		String longString;
+		for(Map.Entry<String, Integer> entry:sepstring.entrySet())
+		{
+			if(max<entry.getValue())
+			{
+				max=entry.getValue();
+				longString=entry.getKey();
+			}
+		}
+		System.out.println("Longest String : "+longString);
+	}
+}

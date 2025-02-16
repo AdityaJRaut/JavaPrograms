@@ -1,0 +1,40 @@
+package SchoolDemo;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	public Student(String name, int age,Course enrolledCourse,String grade) {
+		super(name, age);
+		this.enrolledCourse=enrolledCourse;
+		this.grade=grade;
+	}
+	public void enrollInCourse(Course course)
+	{
+		this.enrolledCourse=course;
+	}
+	
+	public void enrollInCourse(String courseName,int CourseCredits)
+	{
+		this.enrolledCourse=new Course(courseName, CourseCredits);
+	}
+
+	@Override
+	void getDetails() {
+		System.out.println("Enter Name of Student ");
+		this.name=sc.next();
+		System.out.println("Enter Age");
+		this.age=sc.nextInt();	
+	}
+
+	@Override
+	void displayInfo() {
+		System.out.println("Name of Teacher "+this.name);
+		System.out.println("Age "+this.age);
+		
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	
+}

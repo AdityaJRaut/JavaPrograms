@@ -1,0 +1,7 @@
+package javaday9ppnewc;
+
+public class CricketTurf extends Turf
+{
+	
+	
+}

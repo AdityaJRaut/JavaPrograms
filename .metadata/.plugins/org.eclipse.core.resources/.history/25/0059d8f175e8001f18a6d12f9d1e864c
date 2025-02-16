@@ -1,0 +1,24 @@
+package javaday10abstractionrealtime;
+
+import java.util.Scanner;
+
+public class Booking {
+	
+	String customerName;
+	String eventDate;
+	int playingTime;
+	
+
+	public void AcceptBooking()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Customer Name");
+		String customerName=sc.next();
+		System.out.println("Enter Booking Date");
+		String eventDate=sc.next();
+		System.out.println("Enter Hour");
+		int time=sc.nextInt();
+				
+	}
+	
+}

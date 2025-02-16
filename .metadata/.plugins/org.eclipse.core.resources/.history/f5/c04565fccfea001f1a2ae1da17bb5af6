@@ -1,0 +1,40 @@
+package StudentManagementSystem;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	public Student(String name, int age) {
+		super(name, age);
+	}
+	
+	@Override
+	public void displayInfo() {
+		 System.out.println(getDetails());
+	}	
+	@Override
+	public String getDetails() {
+		return "Student: " + name + ", Age: " + age + ", Course: " + enrolledCourse.toString() + ", Grade: " + grade;
+	}
+	public void enrollInCourse(Course course)
+	{
+		 this.enrolledCourse = course;
+	        System.out.println(name + " enrolled in " + course);
+	}
+	
+	public void enrollInCourse(String CourseName,int courseCredit)
+	{
+		 this.enrolledCourse = new Course(CourseName, courseCredit);
+	        System.out.println(name + " enrolled in " + enrolledCourse.toString());
+	}
+
+	public void setGrade(String grade) {
+        this.grade=grade;
+    }
+
+    public String getName() {
+        return name;
+    }
+	
+
+}

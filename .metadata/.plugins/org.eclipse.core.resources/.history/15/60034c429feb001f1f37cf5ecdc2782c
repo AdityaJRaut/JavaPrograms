@@ -1,0 +1,17 @@
+package SchoolDemo;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	
+	public void enrollInCourse(Course course)
+	{
+		
+	}
+	
+	public void enrollInCourse(String courseName,int CourseCredits)
+	{
+		
+	}
+}

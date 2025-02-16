@@ -1,0 +1,37 @@
+package SchoolDemo;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	public Student(String name, int age,Course enrolledCourse,String grade) {
+		super(name, age);
+		this.enrolledCourse=enrolledCourse;
+		this.grade=grade;
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	public void enrollInCourse(Course course)
+	{
+		
+	}
+	
+	public void enrollInCourse(String courseName,int CourseCredits)
+	{
+		
+	}
+
+	@Override
+	void getDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void displayInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+}

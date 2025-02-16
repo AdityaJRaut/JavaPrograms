@@ -1,0 +1,56 @@
+package StudentManagementSystem;
+
+public class Student extends Person {
+	
+	private Course enrolledCourse;
+	private String grade;
+	public Student(String name, int age) {
+		super(name, age);
+	}
+	
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("Name "+this.getName());
+		System.out.println("Age "+this.getAge());
+		System.out.println("Enrolled Course "+this.enrolledCourse.toString());
+	}
+	
+	
+	
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		System.out.println("Enter Name");
+		this.setName(sc.next());
+		System.out.println("Enter Age");
+		this.setAge(sc.nextInt());
+		System.out.println("Enter Course Enrolled");
+		this.setEnrolledCourse(sc.next());
+		System.out.println("Enter grade");
+		this.setGrade(sc.next());
+	}
+	public void enrollInCourse(Course c)
+	{
+		System.out.println("Enter Course Name ");
+		c.setCourseName(sc.next());
+		CourseName=c.getCourseName();
+		System.out.println("Enter Credit");
+		c.setCredits(sc.nextInt());
+	}
+	
+	public void enrollInCourse(String CourseName,int courseCredit)
+	{
+		CourseName=this.CourseName;
+		courseCredit=this.credits;
+		System.out.println("Course Name "+CourseName);
+		System.out.println("Course Credit "+courseCredit);
+	}
+
+	public void setGrade(String grade) {
+		// TODO Auto-generated method stub
+		this.grade=grade;
+	}
+	
+
+}

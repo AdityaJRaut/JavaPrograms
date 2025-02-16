@@ -1,0 +1,6 @@
+package SchoolDemo;
+
+public class Teacher extends Person implements AssignGrades {
+
+	private String subject;
+}

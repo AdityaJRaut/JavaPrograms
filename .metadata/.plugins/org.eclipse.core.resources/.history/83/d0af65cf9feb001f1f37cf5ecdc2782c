@@ -1,0 +1,7 @@
+package SchoolDemo;
+
+public class Course {
+
+	String courseName;
+	int credits;
+}

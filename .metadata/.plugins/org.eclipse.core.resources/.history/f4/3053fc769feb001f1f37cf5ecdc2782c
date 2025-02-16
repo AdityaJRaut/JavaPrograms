@@ -1,0 +1,24 @@
+package SchoolDemo;
+
+public class Teacher extends Person implements AssignGrades {
+
+	private String subject;
+
+	@Override
+	public void assignGrade(Student student, String grade) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void getDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void displayInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+}

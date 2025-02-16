@@ -1,0 +1,42 @@
+package StudentManagementSystem;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		Person teacher;
+		teacher.getDetails();
+		//teacher.displayInfo();
+
+       Student student1;
+       Student student2;
+       student1.getDetails();
+       student2.getDetails();
+       student1.displayInfo();
+       student2.displayInfo();
+       
+       Course java=new Course("Java", 1);
+       Course testing=new Course("Testing", 2);
+
+        student1.enrollInCourse(java);
+        System.out.println("Course Enrolled Java to Student 1");
+        student2.enrollInCourse("Testing", 4); 
+        System.out.println("Course Enrolled Testing to Student 2");
+
+        // Display Information
+        teacher.displayInfo();
+        student1.displayInfo();
+        student2.displayInfo();
+
+        // Assign Grades
+        teacher.assignGrade(student1, "A");
+        teacher.assignGrade(student2, "B");
+
+        // Display Updated Information
+        student1.displayInfo();
+        student2.displayInfo();
+		
+
+	}
+
+}

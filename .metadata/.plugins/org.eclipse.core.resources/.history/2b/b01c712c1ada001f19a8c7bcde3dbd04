@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class copyarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size;
+		System.out.println("Enter size of array");
+		Scanner sc=new Scanner(System.in);
+		size=sc.nextInt();
+		int arr[]=new int[size];
+		System.out.println("Enter "+size+" elements in array :");
+		for(int i=0;i<size;i++)
+		{
+			arr[size]=sc.nextInt();
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+package StudentManagementSystem;
+
+public class Teacher extends Person implements assignGrades {
+
+	private String subject;
+
+	public Teacher(String name, int age, String subject) {
+		super(name, age);
+		this.subject = subject;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("Name "+this.getName());
+		System.out.println("Age "+this.getAge());
+		System.out.println("Subject Taught "+subject);
+	}
+	
+	
+
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		System.out.println("Enter name");
+		this.setName(sc.next());
+		System.out.println("Enter Age");
+		this.setAge(sc.nextInt());
+		System.out.println("Enter Subject Taught");
+		this.subject=sc.next();
+	}
+
+	@Override
+	public void assignGrade(Student student, String grade) 
+	{
+		student.setGrade(grade);
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;dsa.first&apos; to &apos;First&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;dsa.first&apos;&#x0D;&#x0A;- Renamed element: &apos;dsa.First&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;first&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;dsa{first.java[first" matchStrategy="1" name="First" qualified="false" references="true" similarDeclarations="false" stamp="1739164995616" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package SchoolDemo;
+
+abstract class Person {
+
+	protected String name;
+	protected int age;
+	
+	abstract void getDetails();
+	abstract void displayInfo();
+	
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+}
